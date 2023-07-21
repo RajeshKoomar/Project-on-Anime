@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrewMates</title>
+</head>
+<style> 
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    background-image: url(image/sunny.jpg);
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    
+}
+
+.container{
+    display: inline-block;
+    justify-content: center;
+}
+
+.card{
+    margin: 40px;
+    margin-left: 25%;
+    width: 300px;
+    height: 380px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.4);
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover{
+    transform: translateY(20px);
+}
+
+.card:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom , rgba(0,176,155,0.5) , rgba(0,0,0,0.4));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.card:hover:before{
+    opacity: 1;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0; 
+    left: 0;
+}
+
+.card .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    /* border: 2px solid rgb(243, 242, 242);
+    border-radius: 20px; */
+    opacity: 0;
+    transform: translateX(30px);
+    transition: 1s all;
+    padding: 5px;
+}
+
+.card:hover .info{
+opacity: 1;
+transform: translateY(0px);
+backdrop-filter: blur(3px);
+}
+.btn{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color:rgb(0,0,0),rgba(0,0,0,1) ;
+    border: 2px solid wheat;
+    border-radius: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+   transition: 0.4s ease-in-out;
+}
+
+.btn:hover{
+    box-shadow: 0px 2px 2px lightblue;
+    background-color: rgb(88, 88, 252);
+    color: antiquewhite;
+}
+/* card complete */
+
+.head{
+    color: #fff;
+    font-size: 3em;
+    margin:0 auto ;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    backdrop-filter: blur(9px);
+   
+}
+</style>
+<body>
+    <div class="container">
+        <h1 class="head">Straw Hat Crew Members</h1>
+        
+            <!-- 1 -->
+        <div class="card">   
+            <img src="image/luffy.jpg" alt="luffyimage">
+            <div class="info">
+                <h1>Monkey D Luffy</h1>
+                <p>Luffy is the captain of the Straw Hat Pirates, and dreamt of being a pirate since childhood from the influence of his idol and mentor Red-Haired Shanks. At the age of 17, Luffy sets sail from the East Blue Sea to the Grand Line in search of the legendary treasure <span>One Piece</span>.</p>
+                <a href="https://en.wikipedia.org/wiki/Monkey_D._Luffy" class="btn" target="_blank">Read More</a>
+            </div>
+        </div>
+<!-- 2 -->
+        <div class="card">
+            <img src="image/zoro.jpg" alt="zoroimage">
+            <div class="info">
+                <h1>Roronoa Zoro</h1>
+                <p>Roronoa Zoro (ロロノア・ゾロ) is a vice captain  Straw Hat Pirates, and is a swordsman who uses up to three swords simultaneously, holding one in each hand and a third in his mouth.To fulfill a promise to Kuina, his deceased childhood friend and rival, he aims to defeat "Hawk Eye" Mihawk and become the world's greatest swordsman.</p>
+                <a href="https://en.wikipedia.org/wiki/Roronoa_Zoro" class="btn" target="_blank">Read More</a>
+            </div>
+        </div>
+            <!-- 3 -->
+        <div class="card"> 
+            <img src="image/nami.jpg" alt="namiimage">
+            <div class="info">
+                <h1>Nami</h1>
+                <p>Nami is the Straw Hat Pirates navigator, who dreams of drawing a map of the entire world. Despite her initial distrust of pirates, Nami eventually changes her mind after being around Luffy and the rest of the crew. Nami is depicted as an intelligent girl who is obsessed with obtaining money. She is able to use her three-sectioned staff and her climate skills to create powerful attacks,</p>
+                <a href="https://en.wikipedia.org/wiki/Nami_(One_Piece)" class="btn" target="_blank">Read More</a>
+            </div>
+        </div>
+         <!-- 4 -->
+        <div class="card">
+            <img src="image/usopp.jpg" alt="ussopimage">
+            <div class="info">
+                <h1>Usopp</h1>
+                <p>During his early childhood, Usopp (ウソップ, Usoppu) is abandoned by his father, Yasopp, who leaves to join the Red-Haired Pirates. As his mother, Bachina, falls ill, Usopp starts telling tall tales, expressing his hope that his father will return and take them out to sea.</p>
+                <a href="https://en.wikipedia.org/wiki/Usopp" class="btn" target="_blank">Read More</a>
+            </div>
+        </div>
+     <!-- 5 -->
+        <div class="card">
+            <img src="image/sanji.jpg" alt="sanjiimage">
+            <div class="info">
+                <h1>Sanji</h1>
+                <p>Born as a prince of Germa Kingdom, Vinsmoke Sanji (ヴィンスモーク・サンジ, Vinsumōku Sanji) is routinely ridiculed by his genetically enhanced siblings and is locked away by his father Judge for being a disgrace. With help from his sister Reiju, he escapes and flees Germa, a floating kingdom composed of several ships, after it enters the East Blue and his father permits it.</p>
+                <a href="https://en.wikipedia.org/wiki/Roronoa_Zoro" class="btn" target="_blank">Read More</a>
+            </div>
+        </div>
+         <!-- 6 -->
+        <div class="card">
+            <img src="image/chopper.jpg" alt="chopperimage">
+            <div class="info">
+                <h1>Tony Tony Chopper</h1>
+                <p>Tony Tony Chopper (トニートニー・チョッパー, Tonī Tonī Choppā) is a doctor and a blue-nosed reindeer. The power of the Zoan-type Human-Human Fruit (ヒトヒトの実, Hito Hito no Mi) provides him with the ability to transform into a full-sized reindeer or a reindeer-human hybrid.</p>
+                <a href="https://en.wikipedia.org/wiki/Tony_Tony_Chopper" class="btn" target="_blank">Read More</a>
+            </div>
+        </div>
+         <!-- 7 -->
+        <div class="card">
+            <img src="image/robin.jpg" alt="nicoRobinimage">
+            <div class="info">
+                <h1>Nico Robin</h1>
+                <p>Being raised in Ohara (オハラ), home of the world's oldest and largest library, Nico Robin (ニコ・ロビン, Niko Robin) becomes an archaeologist at the age of eight.At some point she gains the power of the Paramecia-type Flower-Flower Fruit (ハナハナの実, Hana Hana no Mi), which allows her to have temporary copies of parts of her body, including her eyes and ears, which spring up on surfaces near her.[</p>
+                <a href="https://en.wikipedia.org/wiki/Nico_Robin" class="btn" target="_blank">Read More</a>
+            </div>
+        </div>
+         <!-- 8-->
+        <div class="card">
+            <img src="image/franky.jpg" alt="Frankyimage">
+            <div class="info">
+                <h1>Franky</h1>
+                <p>The son of pirate parents who abandoned him at age nine, Cutty Flam (カティ・フラム, Kati Furamu) changed his name to Franky (フランキー, Furankī) and is taken in as an apprentice by shipwright Tom, who built Pirate King Gol D Roger's ship, the Oro Jackson, and also secretly holds the plans for a devastating ancient weapon.</p>
+                <a href="https://onepiece.fandom.com/wiki/Franky#:~:text=%22Iron%20Man%22%20Franky%20is%20the,the%20Post%2DEnies%20Lobby%20Arc." class="btn" target="_blank">Read More</a>
+            </div>
+        </div>
+         <!-- 9 -->
+        <div class="card">
+            <img src="image/brook.jpg" alt="Brookimage">
+            <div class="info">
+                <h1>Brook</h1>
+                <p>Already a pirate before the time of Roger, "Humming" Brook (ブルック, Burukku) first enters the Grand Line as a member of the music-themed Rumbar Pirates. Leaving their pet, the infant whale Laboon (ラブーン, Rabūn), at Reverse Mountain, they promise to return after sailing around the world.After losing their captain "Calico" Yorki (キャラコのヨーキ, Kyarako no Yōki), Brook took over the crew as the new captain. </p>
+                <a href="https://onepiece.fandom.com/wiki/Brook" class="btn" target="_blank">Read More</a>
+            </div>
+        </div>
+         <!-- 10 -->
+        <div class="card">
+            <img src="image/jimbei.jpg" alt="jimbeiimage">
+            <div class="info">
+                <h1>Jimbei</h1>
+                <p>Jimbei (ジンベエ, Jinbē) is a yakuza-esque whale shark-type fish-man.A master of Fish-Man Karate (魚人空手, Gyojin Karate), he is capable of manipulating water as if it were a tangible cloth.[ch. 546] Jimbei can communicate with fish, an ability more usually associated with merfolk, and enlist the help of whale sharks.</p>
+                <a href="https://onepiece.fandom.com/wiki/Jinbe" class="btn" target="_blank">Read More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

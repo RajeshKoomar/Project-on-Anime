@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title> 
+    <!-- title icon link -->
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon"> 
+
+    <!-- font icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://kit.fontawesome.com/95d3f97c28.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    body{
+        background-color: rgb(189, 184, 252);
+    }
+    .bg-img {
+        width: 100%;
+        height: 550px;
+        background-position: center;
+        position: absolute;
+    }
+
+    ul,
+    li {
+        position: fixed;
+        top: 0px;
+        position: sticky;
+        padding: 2px;
+        z-index: 2;
+    }
+
+    li ,a{
+        list-style: none;
+        text-decoration: none;
+       
+    }
+
+    ul a {
+        color: rgb(247, 247, 247);
+        font-size: 1.5rem;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    ul {
+        margin: 0% auto;
+        width: 600px;
+        height: 30px;
+        display: flex;
+        padding: 3px;
+        justify-content: space-around;
+        border: 2px solid #0099cc;
+        backdrop-filter: blur(30px);
+        text-decoration: none;
+       
+    }
+
+    .nav,
+    .h {
+        width: 300px;
+        color: gold;
+        /* border: 2px solid rgba(0, 0, 0, 0); */
+        border-radius: 20px;
+        backdrop-filter: blur(3px);
+        font-size: 3rem;
+        text-decoration: none;
+        overflow: hidden;
+    }
+
+    .nav .logo {
+        width: 100px;
+        height: 50px;
+    }
+
+    ul li a:hover {
+        background-color: #ffffff;
+        color: rgb(29, 0, 61);
+        border-radius: 10px;
+        font-size: 1.6em;
+    }
+
+    div .h:hover {
+        color: rgb(243, 247, 5);
+    }
+
+    div a {
+        margin-left: -20px;
+        /*header text*/
+    }
+    /* upper text block */
+    .upper-text {
+        position: relative;
+        border: 3px solid reba(0,0,0,0.5);
+        width: 350px;
+        height: 270px;
+        text-align: center;
+        margin: 85px auto auto 100px;
+        backdrop-filter: blur(2px);
+    }
+
+    .upper-text h1{
+        color: azure;
+        font-size: 3em;
+    }
+    .upper-text p{
+        color: aliceblue;
+        font-size: 1.9em;
+    }
+    .upper-text .watch{
+        font-size: 1.5em;
+        background-color: green;
+        color: aliceblue;
+        border: 2px solid green;
+        width: 200px;
+        padding: 5px;
+        border-radius: 1em;
+    }
+    .upper-text .watch:hover{
+        background-color: rgb(1, 170, 1);
+    }
+    /* videos section */
+    .section{
+        margin-top: 120px;
+    }
+    .vdo-heading{
+       margin: 0 auto;
+      border: 2px solid;
+      width: 350px;
+      text-align: center;
+      padding: 10px;
+      background-color: aliceblue;
+      font-size: 2em;
+      margin-top:30px;
+      margin-bottom: 30px;
+    }
+    .videos{
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+        flex-wrap: wrap;
+        background-color: darkgray;
+    }
+    .videos video{
+        width: 300px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .videos video:hover{
+        box-shadow: 2px 3px 35px 3px rgb(8, 1, 1) ;
+    }
+    .utube-v{
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     row-gap: 30px;
+     background-color: darkgray;
+        margin-top: 40px;
+    }
+    .utube-v iframe{
+        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .utube-v iframe:hover{
+        box-shadow: 2px 3px 35px 3px rgb(8, 1, 1) ;
+    }
+   /* footer */
+   footer div h3{
+    margin-left: 10px;
+   }
+   footer div{
+    width: 100%;
+    height: 250px;
+    color: #ffffff;
+    background-color: black;
+   }
+   footer div a i{
+    margin: 20px 0px 20px 40px; 
+    font-size: 2.5em;
+    color: #ffffff;
+   }
+   footer div .fb i:hover{
+    color:#0c0394;
+   }
+   footer div .insta i:hover{
+    color: #0c0394;
+}
+   footer address{
+    color:#ffffff;
+    margin: 10px;
+   }
+   footer address span{
+    font-weight: bold;
+   }
+</style>
+
+<body>
+   
+    <img class="bg-img" src="image/sunny.jpg" alt="" width="100%">
+    <div class="nav"><img class="logo" src="image/logo.png" alt=""><a class="h"
+            href="http://127.0.0.1:5500/LuffyCrew.html">One Piece</a> </div>
+    <ul>
+        <li>
+
+            <a href="http://127.0.0.1:5500/LuffyCrew.html">
+                <i class="fa-solid fa-house" href="http://127.0.0.1:5500/LuffyCrew.html"></i>
+                Home</a>
+
+        </li>
+        <li>
+
+            <a href="http://127.0.0.1:5500/cardP.html">
+                <i class="fa-solid fa-people-group"></i>
+                CrewMates</a>
+        </li>
+        <li>
+
+            <a href="http://127.0.0.1:5500/LuffyCrewDetails.html">
+                <i class="fa-sharp fa-solid fa-circle-info"></i>
+                Details</a>
+        </li>
+        <li>
+
+            <a href="#contect">
+                <i class="fa-solid fa-phone"></i>
+                Contect</a>
+        </li>
+    </ul>
+
+<!-- over the image block -->
+    <div class="upper-text">
+        <h1>ONE PIECE</h1>
+        <p>To Watch  All Episodes of One Piece</p>
+        <a class="watch" href="https://sanji.to/one-piece-100" target="_blank">Watch Here</a>
+    </div>
+<section class="section">
+    <div>
+        <h1 class="vdo-heading">Few Shorts of One Piece</h1>
+       <div class="videos">
+<video src="music&videos/onePiece.mp4" alt="video" controls ></video>
+
+<video src="music&videos/onePiece2.mp4" controls></video>
+
+<video class="rotate" src="music&videos/onePiece3.mp4" controls></video>
+<video class="rotate" src="music&videos/onePiece4.mp4" controls></video>
+       </div>
+
+       <!-- youtube videos block -->
+      
+        <h1 style="margin-top: 40px; margin-bottom: 40px;" class="vdo-heading">Some Fighting Videos of <span>One Piece</span></h1>
+        <div class="utube-v">
+        <iframe class="utube-vdo" width="460" height="315" src="https://www.youtube.com/embed/PgsudzP8A6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br><br>    
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/epTTE9U3ygI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       </div>
+    </div>
+</section>
+   <footer id="contect">
+    <div>
+       <h3>JOIN ONE PIECE COMMUNITY THROUGH US :</h3>
+       <a class="fb" href="https://www.facebook.com/groups/1piececommunity/" target="_blank"><i class="fa-brands fa-facebook fa-beat"></i></a>
+
+       <a class="insta" href="https://www.instagram.com/onepiece.now/?hl=en" target="_blank"><i class="fa-brands fa-square-instagram fa-beat"></i></a>
+
+      
+        <address>
+            <p> <span>Email :</span>Abcd123@gmail.com</p>
+            <p> <span>Address :</span>xyz city country</p>
+            <p> <span>CONTECT :</span>01236548789</p>
+        </address>
+      </div>
+   </footer>
+</body>
+
+</html>
